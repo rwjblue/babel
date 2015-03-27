@@ -1,22 +1,13 @@
 {
-  "name": "babel",
+  "name": "babel-core",
   "description": "Turn ES6 code into readable vanilla ES5 with source maps",
   "version": "4.7.16",
   "author": "Sebastian McKenzie <sebmck@gmail.com>",
   "homepage": "https://babeljs.io/",
   "repository": "babel/babel",
-  "preferGlobal": true,
   "main": "lib/babel/api/node.js",
   "browser": {
     "./lib/babel/api/register/node.js": "./lib/babel/api/register/browser.js"
-  },
-  "bin": {
-    "6to5": "./bin/deprecated/6to5",
-    "6to5-node": "./bin/deprecated/6to5-node",
-    "6to5-runtime": "./bin/deprecated/6to5-runtime",
-    "babel": "./bin/babel/index.js",
-    "babel-node": "./bin/babel-node",
-    "babel-external-helpers": "./bin/babel-external-helpers"
   },
   "keywords": [
     "harmony",
@@ -31,14 +22,9 @@
     "6to5",
     "babel"
   ],
-  "scripts": {
-    "bench": "make bench",
-    "test": "make test"
-  },
   "dependencies": {
     "ast-types": "~0.7.0",
     "chalk": "^1.0.0",
-    "chokidar": "^0.12.6",
     "commander": "^2.6.0",
     "convert-source-map": "^0.5.0",
     "core-js": "^0.6.1",
@@ -66,18 +52,5 @@
     "source-map-support": "^0.2.9",
     "to-fast-properties": "^1.0.0",
     "trim-right": "^1.0.0"
-  },
-  "devDependencies": {
-    "babel": "4.7.13",
-    "browserify": "^9.0.3",
-    "chai": "^2.0.0",
-    "eslint": "^0.15.1",
-    "babel-eslint": "^1.0.1",
-    "esvalid": "^1.1.0",
-    "istanbul": "^0.3.5",
-    "matcha": "^0.6.0",
-    "mocha": "^2.1.0",
-    "rimraf": "^2.2.8",
-    "uglify-js": "^2.4.16"
   }
 }
