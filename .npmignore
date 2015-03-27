@@ -1,7 +1,6 @@
 node_modules
 *.log
 *.cache
-lib/babel/transformation/templates
 test
 benchmark
 Makefile
