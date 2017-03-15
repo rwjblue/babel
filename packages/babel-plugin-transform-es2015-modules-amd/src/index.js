@@ -58,7 +58,7 @@ export default function ({ types: t }) {
   };
 
   return {
-    inherits: require("babel-plugin-transform-es2015-modules-commonjs"),
+    inherits: require("rwjblue-custom-babel-6-cjs-modules-no-interop"),
 
     pre() {
       // source strings
